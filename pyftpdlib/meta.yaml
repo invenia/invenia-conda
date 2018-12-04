@@ -1,0 +1,38 @@
+{% set name = "pyftpdlib" %}
+{% set version = "1.5.4" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e5fca613978743d41c3bfc68e25a811d646a3b8a9eee9eb07021daca89646a0f
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+
+requirements:
+  host:
+    - pip
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - pyftpdlib
+
+about:
+  home: https://github.com/giampaolo/pyftpdlib/
+  license: MIT
+  license_family: MIT
+  license_file: 
+  summary: Very fast asynchronous FTP server library
+  doc_url: 
+  dev_url: 
+
+extra:
+  recipe-maintainers:
+    - your-github-id-here
