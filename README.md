@@ -11,6 +11,14 @@ packages installed:
 - `build-essential`
 - `vim`
 
+## Current Releases
+
+| Package                                             | Version                                                                    | Supported Platforms                    | Python              |
+| --------------------------------------------------- | :------------------------------------------------------------------------: | :------------------------------------: | :-----------------: |
+| [keras](keras.io)                                   | [1.2.2](https://github.com/keras-team/keras/releases/tag/1.2.2)            | linux-32,linux-64,win-32,win-64,osx-64 | py27,py35           |
+| [pyftpdlib](https://github.com/giampaolo/pyftpdlib) | [1.5.4](https://github.com/giampaolo/pyftpdlib/releases/tag/release-1.5.4) | linux-32,linux-64,win-32,win-64,osx-64 | py27,py35,py36,py37 |
+
+
 ## Setup
 
 Start by downloading and installing [miniconda](http://conda.pydata.org/miniconda.html#miniconda).
@@ -614,9 +622,11 @@ To remove them, you can run the ```conda build purge``` command
 ```
 
 **NOTE** You'll want to repeat this command for the other python versions we want to support.
-In this case we want to support python 2.7, 3.6 and 3.7, so we'll run:
+In this case we want to support python 2.7, 3.5, 3.6 and 3.7, so we'll run:
 ```shell
 $ ~/miniconda3/bin/conda build --python 3.6 pyftpdlib
+...
+$ ~/miniconda3/bin/conda build --python 3.5 pyftpdlib
 ...
 $ ~/miniconda3/bin/conda build --python 2.7 pyftpdlib
 ...
