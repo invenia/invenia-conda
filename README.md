@@ -16,7 +16,7 @@ packages installed:
 | Package                                             | Version                                                                    | Supported Platforms                    | Python              |
 | --------------------------------------------------- | :------------------------------------------------------------------------: | :------------------------------------: | :-----------------: |
 | [keras](keras.io)                                   | [1.2.2](https://github.com/keras-team/keras/releases/tag/1.2.2)            | linux-32,linux-64,win-32,win-64,osx-64 | py27,py35           |
-| [pyftpdlib](https://github.com/giampaolo/pyftpdlib) | [1.5.4](https://github.com/giampaolo/pyftpdlib/releases/tag/release-1.5.4) | linux-32,linux-64,win-32,win-64,osx-64 | py27,py35,py36,py37 |
+| [pyftpdlib](https://github.com/giampaolo/pyftpdlib) | [1.5.6](https://github.com/giampaolo/pyftpdlib/releases/tag/release-1.5.6) | linux-32,linux-64,win-32,win-64,osx-64 | py36,py37,py38 |
 
 
 ## Setup
